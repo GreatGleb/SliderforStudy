@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>Бутерброды</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/logo/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="csslide.css">
+	<script src="jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,
+	900|Playfair+Display:400,400i&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+</head>
+
+<body>
+		<div class="cont">
+			<div class="slider"></div>
+			<ul class="nat">
+		</div>
+	
+	<!--
+	
+		<div id="slider_text"><p>Рецепты горячих бутербродов</p></div>
+		
+		<div class="arroww lefftz">
+			<a class="ahlow" href="#">
+			  <span class="left_arr" id="id_lef_ar"></span>
+			</a>
+		</div>
+		<a href="#" id="sld_href">
+			<img src="../img/recipes/teaser.jpg" alt="Long Beach Surfing Institute" id="id_slider">
+		</a>
+		<div class="arroww rightz">
+			<a class="ahlow" href="#">
+			  <span class="right_arr" id="id_rig_ar"></span>
+			</a>
+		</div>    -->
+
+	</div>
+	<!-- // space -->
+	<!-- // header-wrapper -->
+		
+		<script src="jslide.js"></script>
+
+	<script type="text/javascript">		
+		
+	/*menu adaptive*/
+	
+	$(document).ready(function() {
+		$("#open-menu").on("click", function() {
+			var target = $(this).attr("data-target");
+			if ($(target).hasClass("open")) {
+				$(target).removeClass("open");
+			} else {
+				$(target).addClass("open");
+			}
+		});
+
+		$(window).on("load resize", windowSize);
+
+		function windowSize() {
+			if ($(window).width() > "991") {
+				var menu = $("#open_menu").attr("data-target");
+				$(menu).removeClass("open");
+			}
+		}
+	});
+
+  </script>
+	
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
